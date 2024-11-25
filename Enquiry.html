@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Give Us Your Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="book.html">Book Now</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+            <li><a href="login.html">login</a></li>
+        </ul>
+    </nav>
+
+    <section id="feedback">
+        <h2>We Value Your Enquiry</h2>
+        <form id="Enquiry" onsubmit="return handleFeedback(event);">
+            <label for="feedbackName">Full Name:</label>
+            <input type="text" id="feedbackName" name="feedbackName" required>
+
+            <label for="feedbackEmail">Email:</label>
+            <input type="email" id="feedbackEmail" name="feedbackEmail" required>
+
+            <label for="feedback">Your Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="6" required></textarea>
+
+            <button type="submit" class="btn">Submit Enquiry</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

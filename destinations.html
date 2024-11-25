@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular Destinations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="book.html">Book Now</a></li>
+            <li><a href="Enquiry.html">Enquiry</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <section id="destinations">
+        <h2>Popular Destinations</h2>
+        <div class="destination-grid">
+            <!-- Destination 1 -->
+            <div class="destination">
+                <a href="book.html?destination=paris" onclick="addToCart('Paris, France', 2000);">
+                    <img src="paris.jpg" alt="Paris">
+                    <h3>Paris, France</h3>
+                    <p>The city of love, art, and culture awaits you!</p>
+                </a>
+            </div>
+            <!-- Destination 2 -->
+            <div class="destination">
+                <a href="book.html?destination=maldives" onclick="addToCart('Maldives', 1500);">
+                    <img src="maldives.jpg" alt="Maldives">
+                    <h3>Maldives</h3>
+                    <p>Experience the crystal-clear waters and stunning beaches.</p>
+                </a>
+            </div>
+            <!-- Destination 3 -->
+            <div class="destination">
+                <a href="book.html?destination=tokyo" onclick="addToCart('Tokyo, Japan', 1800);">
+                    <img src="pari.jpg" alt="Tokyo">
+                    <h3>Tokyo, Japan</h3>
+                    <p>Discover the vibrant culture and technology of Japan.</p>
+                </a>
+            </div>
+            <!-- Destination 4 -->
+            <div class="destination">
+                <a href="book.html?destination=dubai" onclick="addToCart('Dubai', 3000);">
+                    <img src="dubai.jpg" alt="Dubai">
+                    <h3>Dubai</h3>
+                    <p>Explore luxury and modern architecture in Dubai.</p>
+                </a>
+            </div>
+            <!-- Destination 5 -->
+            <div class="destination">
+                <a href="book.html?destination=munnar" onclick="addToCart('Munnar, Kerala', 2500);">
+                    <img src="munnar.jpg" alt="Munnar">
+                    <h3>Munnar, Kerala</h3>
+                    <p>Enjoy the serene hills and tea plantations of Munnar.</p>
+                </a>
+            </div>
+            <!-- Destination 6 -->
+            <div class="destination">
+                <a href="book.html?destination=ooty" onclick="addToCart('Ooty, Tamil Nadu', 2200);">
+                    <img src="ooty.jpg" alt="Ooty">
+                    <h3>Ooty, Tamil Nadu</h3>
+                    <p>Experience the cool climate and picturesque landscapes.</p>
+                </a>
+            </div>
+            <!-- Destination 7 -->
+            <div class="destination">
+                <a href="book.html?destination=mysore" onclick="addToCart('Mysore, Karnataka', 1800);">
+                    <img src="mysore.jpg" alt="Mysore">
+                    <h3>Mysore, Karnataka</h3>
+                    <p>Visit the majestic palaces and vibrant culture of Mysore.</p>
+                </a>
+            </div>
+            <!-- Destination 8 -->
+            <div class="destination">
+                <a href="book.html?destination=kerala" onclick="addToCart('Kerala, India', 1500);">
+                    <img src="kerala.jpg" alt="Kerala">
+                    <h3>Kerala, India</h3>
+                    <p>Explore the lush backwaters and natural beauty of Kerala.</p>
+                </a>
+            </div>
+            <!-- Destination 9 -->
+            <div class="destination">
+                <a href="book.html?destination=singapore" onclick="addToCart('Singapore', 5500);">
+                    <img src="singa.jpg" alt="Singapore">
+                    <h3>Singapore</h3>
+                    <p>Experience the blend of modernity and tradition in Singapore.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="book.html">Book Now</a></li>
+            <li><a href="Enquiry.html">Enquiry</a></li>
+           
+        </ul>
+    </nav>
+
+    <section id="thank-you">
+        <h2>Thank You for Your Booking!</h2>
+        <p id="thankYouMessage"></p>
+    </section>
+
+    <script>
+        // Get query parameters from the URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get('name');
+        const price = urlParams.get('price');
+
+        // Display personalized thank you message
+        document.getElementById('thankYouMessage').textContent = `Thank you, ${name}! Your booking has been confirmed. The total amount is $${price}.`;
+    </script>
+</body>
+</html>

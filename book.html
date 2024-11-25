@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Trip</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="book.html">Book Now</a></li>
+            <li><a href="Enquiry.html">Enquiry</a></li>
+            <li><a href="login.html">login</a></li>
+        </ul>
+    </nav>
+
+    <section id="booking">
+        <h2>Book Your Dream Vacation</h2>
+        <form id="bookingForm" onsubmit="return handleBooking(event);">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="destination">Choose Destination:</label>
+            <select id="destination" name="destination" required>
+                <option value="paris" data-price="2000">Paris, France</option>
+    <option value="maldives" data-price="1500">Maldives</option>
+    <option value="tokyo" data-price="1800">Tokyo, Japan</option>
+    <option value="dubai" data-price="3000">Dubai</option>
+    <option value="munnar" data-price="2500">Munnar, Kerala</option>
+    <option value="ooty" data-price="2200">Ooty, Tamil Nadu</option>
+    <option value="mysore" data-price="1800">Mysore, Karnataka</option>
+    <option value="kerala" data-price="1500">Kerala, India</option>
+    <option value="singapore" data-price="5500">Singapore</option>
+            </select>
+
+            <label for="dates">Travel Dates:</label>
+            <input type="date" id="dates" name="dates" required>
+            <span class="hint">Please select a date starting from today.</span>
+            
+            <label for="people">Number of People:</label>
+            <input type="number" id="people" name="people" min="1" max="10" required>
+
+            <button type="submit" class="btn">Submit Booking</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
